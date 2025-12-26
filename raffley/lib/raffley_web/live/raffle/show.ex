@@ -71,29 +71,30 @@ defmodule RaffleyWeb.RafflesLive.Show do
       <div class="raffle-show">
         <div class="raffle">
           <img src={@raffle.image_path} alt="" />
+
           <section>
             <.badge status={@raffle.status} />
-            <header>
+            <header class="flex flex-col gap-5 lg:flex-row">
               <div>
-                <h2>{@raffle.prize}</h2>
-                <h3>{@raffle.charity.name}</h3>
+                <h2 class="text-xl">{@raffle.prize}</h2>
+                <h3 class="text-base">{@raffle.charity.name}</h3>
               </div>
-              <div class="price">
+              <div class="price text-lg font-bold">
                 $ {@raffle.ticket_price} / Ticket
               </div>
             </header>
 
-            <div class="totals">
+            <div class="totals text-sm">
               {@ticket_count} Ticket Sold &bull; ${@ticket_sum} raised
             </div>
 
-            <div class="description">
-              <p class="">{@raffle.description}</p>
+            <div class="description text-base">
+              {@raffle.description}
             </div>
           </section>
         </div>
 
-        <div class="activity">
+        <div class="activity flex flex-col gap-5 lg:flex-row lg:justify-between">
           <div class="left">
             <div :if={@raffle.status == :open}>
               <%= if @current_scope && @form do %>
@@ -114,7 +115,7 @@ defmodule RaffleyWeb.RafflesLive.Show do
                   </.button>
                 </.form>
               <% else %>
-                <.link href={~p"/users/log-in"} class="button">Log to get ticket</.link>
+                <.link href={~p"/users/log-in"} class="button">Login to get ticket</.link>
               <% end %>
             </div>
 

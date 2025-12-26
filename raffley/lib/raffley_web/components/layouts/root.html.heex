@@ -46,18 +46,11 @@
         <% else %>
           <li>
             <.link
-              class="py-3 px-5 text-base rounded-xl bg-white shadow-md"
-              href={~p"/users/register"}
-            >
-              Register
-            </.link>
-          </li>
-          <li>
-            <.link
-              class="py-3 px-5 text-base rounded-xl bg-white shadow-md"
+              class="py-2 px-5 rounded-xl bg-blue-400 text-white shadow-md flex items-center gap-3"
               href={~p"/users/log-in"}
             >
-              Log in
+              <p class="text-xs lg:text-base">Login</p>
+              <.icon name="hero-arrow-left-start-on-rectangle" />
             </.link>
           </li>
         <% end %>

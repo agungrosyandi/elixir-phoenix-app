@@ -16,63 +16,67 @@ defmodule RaffleyWeb.AdminRafflesLive.Index do
   def render(assigns) do
     ~H"""
     <Layouts.app flash={@flash}>
-      <div class="relative">
-        <.header>
-          {@page_title}
-          <:actions>
-            <.link navigate={~p"/admin/raffles/new"} class="button">
-              New Raffles
-            </.link>
-          </:actions>
-        </.header>
+      <div class="w-full rounded-xl p-5 border border-zinc-200  shadow-sm">
+        <div class="border-b border-zinc-200 px-6 py-4">
+          <.header>
+            {@page_title}
+            <:actions>
+              <.link navigate={~p"/admin/raffles/new"} class="btn">
+                New Raffles
+              </.link>
+            </:actions>
+          </.header>
+        </div>
 
-        <div class="relative mt-10 overflow-hidden w-full flex flex-col p-5 rounded-xl border border-gray-200 bg-white shadow-sm">
+        <div class="overflow-x-auto">
           <.table
             id="raffles"
             rows={@streams.raffles}
             row_click={fn {_, raffle} -> JS.navigate(~p"/raffles/#{raffle.id}") end}
           >
             <:col :let={{_, raffle}} label="Prize">
-              <div class="p-2 text-sky-600 underline-offset-2 hover:text-sky-800 hover:underline transition duration-150 ease-in-out">
+              <div class=" text-sky-600 underline-offset-2 hover:text-sky-800 hover:underline transition duration-150 ease-in-out">
                 <.link navigate={~p"/raffles/#{raffle.id}"}>
                   {raffle.prize}
                 </.link>
               </div>
             </:col>
 
-            <:col :let={{_, raffle}} label="Status">
-              <div class="p-2">
-                <.badge status={raffle.status} />
-              </div>
+            <:col :let={{_dom_id, raffle}} label="Status">
+              <.badge status={raffle.status} />
             </:col>
 
-            <:col :let={{_, raffle}} label="Ticket Price">
-              <div class="p-2">
-                {raffle.ticket_price}
-              </div>
+            <:col :let={{_dom_id, raffle}} label="Ticket Price">
+              {raffle.ticket_price}
             </:col>
 
             <:col :let={{_dom_id, raffle}} label="Winning Ticket Number">
-              <div class="p-2">
-                {raffle.winning_ticket_id}
-              </div>
+              {raffle.winning_ticket_id}
             </:col>
             
     <!-- action -->
 
             <:action :let={{_, raffle}}>
-              <.link navigate={~p"/admin/raffles/#{raffle.id}/edit"}> Edit</.link>
+              <.link navigate={~p"/admin/raffles/#{raffle.id}/edit"}>
+                <button class="btn btn-info text-xs">
+                  Edit
+                </button>
+              </.link>
             </:action>
 
             <:action :let={{dom_id, raffle}}>
               <.link phx-click={delete_and_hide(dom_id, raffle)} data-confirm="are you sure ?">
-                Delete
+                <button class="btn btn-error text-xs">
+                  Delete
+                </button>
               </.link>
             </:action>
 
             <:action :let={{_dom_id, raffle}}>
               <.link phx-click="draw-winner" phx-value-id={raffle.id}>
-                Draw Winner
+                <button class="btn btn-success text-xs">
+                  Draw&nbspWinner
+                </button>
               </.link>
             </:action>
           </.table>

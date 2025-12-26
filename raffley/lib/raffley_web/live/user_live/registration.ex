@@ -14,8 +14,8 @@ defmodule RaffleyWeb.UserLive.Registration do
 
         <div class="w-[100%]">
           <img
-            class="relative h-full w-full object-cover"
-            src="/images/balloon-ride.jpg"
+            class="relative h-full w-full object-cover rounded-xl"
+            src="/images/image-1.jpg"
             alt="My Image"
           />
         </div>

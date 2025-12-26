@@ -54,18 +54,32 @@ defmodule RaffleyWeb.RafflesLive.Index do
       
     <!-- query search -->
 
-      <.input
-        class="border p-2 rounded-lg"
-        field={@form[:q]}
-        placeholder="Search ...."
-        autocomplete="off"
-        phx-debounce="500"
-      />
+      <label class="input mb-3 md:mb-0">
+        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <g
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2.5"
+            fill="none"
+            stroke="currentColor"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </g>
+        </svg>
+        <.input
+          class="grow mt-1"
+          field={@form[:q]}
+          placeholder="Search ...."
+          autocomplete="off"
+          phx-debounce="500"
+        />
+      </label>
       
     <!-- sort by upcoming, open, closed -->
 
       <.input
-        class="border p-2 rounded-lg"
+        class="input cursor-pointer mt-2"
         type="select"
         field={@form[:status]}
         prompt="Status"
@@ -75,7 +89,7 @@ defmodule RaffleyWeb.RafflesLive.Index do
     <!-- sort by charity -->
 
       <.input
-        class="border p-2 rounded-lg"
+        class="input cursor-pointer mt-2"
         type="select"
         field={@form[:charity]}
         prompt="Charity"
@@ -85,7 +99,7 @@ defmodule RaffleyWeb.RafflesLive.Index do
     <!-- sort by prize and ticket price filter -->
 
       <.input
-        class="border p-2 rounded-lg"
+        class="input cursor-pointer mt-2"
         type="select"
         field={@form[:sort_by]}
         prompt="Sort By"
@@ -97,7 +111,7 @@ defmodule RaffleyWeb.RafflesLive.Index do
         ]}
       />
 
-      <.link patch={~p"/raffles"}>reset</.link>
+      <.link patch={~p"/raffles"}>Reset</.link>
     </.form>
     """
   end
@@ -111,13 +125,15 @@ defmodule RaffleyWeb.RafflesLive.Index do
     ~H"""
     <.link navigate={~p"/raffles/#{@raffle.id}"} id={@id}>
       <div class="card">
-        <div class="charity">
+        <div class="charity text-sm lg:text-base">
           {@raffle.charity.name}
         </div>
-        <img src={@raffle.image_path} alt="" srcset="" />
-        <h2 class="">{@raffle.prize}</h2>
-        <div class="details">
-          <div class="price">
+
+        <img src={@raffle.image_path} alt="3D card" />
+
+        <h2 class="text-sm lg:text-base">{@raffle.prize}</h2>
+        <div class="details flex flex-col gap-3 lg:flex-row">
+          <div class="price text-sm">
             ${@raffle.ticket_price} / Ticket
           </div>
           <.badge status={@raffle.status} />

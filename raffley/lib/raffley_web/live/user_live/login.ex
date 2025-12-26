@@ -3,6 +3,8 @@ defmodule RaffleyWeb.UserLive.Login do
 
   alias Raffley.Accounts
 
+  # RENDER -------------------------------------------------------------------------------------------
+
   @impl true
   def render(assigns) do
     ~H"""
@@ -13,15 +15,15 @@ defmodule RaffleyWeb.UserLive.Login do
 
         <div class="w-[100%]">
           <img
-            class="relative h-full w-full object-cover"
-            src="/images/balloon-ride.jpg"
+            class="relative h-full w-full object-cover rounded-xl"
+            src="/images/image-1.jpg"
             alt="My Image"
           />
         </div>
         
     <!-- right ----------------->
 
-        <div class="mx-auto w-full h-full space-y-6 rounded-xl bg-white p-8 shadow-md">
+        <div class="mx-auto w-full h-full space-y-6 rounded-xl p-8 shadow-md">
           <.header>
             <div class="flex flex-row items-center py-5">
               <div class="h-[0.1rem] w-full bg-black"></div>
@@ -61,7 +63,7 @@ defmodule RaffleyWeb.UserLive.Login do
             phx-submit="submit_magic"
           >
             <.input
-              class="w-full rounded-lg border border-gray-300 p-3 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              class="input w-full"
               readonly={!!@current_scope}
               field={f[:email]}
               type="email"
@@ -70,7 +72,7 @@ defmodule RaffleyWeb.UserLive.Login do
               placeholder="email"
               phx-mounted={JS.focus()}
             />
-            <.button class="button cursor-pointer w-full mt-5">
+            <.button class="btn btn-neutral w-full mt-5">
               Log in with email <span aria-hidden="true">→</span>
             </.button>
 
@@ -90,7 +92,7 @@ defmodule RaffleyWeb.UserLive.Login do
             phx-trigger-action={@trigger_submit}
           >
             <.input
-              class="w-full rounded-lg border border-gray-300 p-3 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              class="input w-full"
               readonly={!!@current_scope}
               field={f[:email]}
               type="email"
@@ -99,26 +101,24 @@ defmodule RaffleyWeb.UserLive.Login do
               required
             />
             <.input
-              class="w-full rounded-lg border border-gray-300 p-3 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              class="input w-full"
               field={@form[:password]}
               type="password"
               label="Password"
               autocomplete="current-password"
             />
 
-            <.button class="button my-5 cursor-pointer w-full">
+            <.button class="btn btn-neutral w-full mt-5">
               Login
             </.button>
-
-            <%!-- <.button class="btn">
-              Login
-            </.button> --%>
           </.form>
         </div>
       </div>
     </Layouts.app>
     """
   end
+
+  # MOUNT -------------------------------------------------------------------------------------------
 
   @impl true
   def mount(_params, _session, socket) do
@@ -130,6 +130,8 @@ defmodule RaffleyWeb.UserLive.Login do
 
     {:ok, assign(socket, form: form, trigger_submit: false)}
   end
+
+  # HANDLE EVENT -------------------------------------------------------------------------------------------
 
   @impl true
   def handle_event("submit_password", _params, socket) do
