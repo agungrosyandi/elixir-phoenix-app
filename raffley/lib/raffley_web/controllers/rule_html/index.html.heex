@@ -1,0 +1,15 @@
+<div class="rules">
+  <h1>The Rules</h1>
+
+  <p phx->
+    {@emojis}
+  </p>
+
+  <ol>
+    <%= for rule <- @rules do %>
+      <a href={"/rules/#{rule.id}"}>
+        <li>{rule.text}</li>
+      </a>
+    <% end %>
+  </ol>
+</div>

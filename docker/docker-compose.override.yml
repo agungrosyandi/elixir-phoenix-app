@@ -1,0 +1,4 @@
+services:
+  raffley.app.postgres:
+    ports:
+      - "${POSTGRES_PORT}:5432"

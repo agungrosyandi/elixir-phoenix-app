@@ -1,0 +1,2621 @@
+{
+  "version": "1.0.0",
+  "timestamp": 1766740614721,
+  "workspaceRoot": "/home/agung/project agung web development/elixir phoenix/raffley_app",
+  "registries": {
+    "components": {
+      "components": [
+        [
+          "__phoenix_builtins__",
+          [
+            {
+              "name": "link",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/home/agung/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.link/1 – Generates an anchor tag that supports LiveView-aware navigation.",
+              "attributes": [
+                {
+                  "name": "navigate",
+                  "type": "string",
+                  "required": false,
+                  "doc": "Use VerifiedRoutes: `navigate={~p\"/path\"}`"
+                },
+                {
+                  "name": "patch",
+                  "type": "string",
+                  "required": false,
+                  "doc": "Use VerifiedRoutes: `patch={~p\"/path\"}`"
+                },
+                {
+                  "name": "href",
+                  "type": "string",
+                  "required": false,
+                  "doc": "External/legacy target. Prefer `navigate`/`patch` with VerifiedRoutes."
+                },
+                {
+                  "name": "method",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "replace",
+                  "type": "boolean",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "live_patch",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/home/agung/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.live_patch/1 – Generates a patch navigation link within the same LiveView.",
+              "attributes": [
+                {
+                  "name": "patch",
+                  "type": "string",
+                  "required": true,
+                  "doc": "Use VerifiedRoutes: `patch={~p\"/path\"}`"
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "replace",
+                  "type": "boolean",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "live_redirect",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/home/agung/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.live_redirect/1 – Generates a redirect navigation link to another LiveView or controller.",
+              "attributes": [
+                {
+                  "name": "navigate",
+                  "type": "string",
+                  "required": true,
+                  "doc": "Use VerifiedRoutes: `navigate={~p\"/path\"}`"
+                },
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "replace",
+                  "type": "boolean",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "live_component",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/home/agung/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.live_component/1 – Embeds a stateful LiveComponent from HEEx.",
+              "attributes": [
+                {
+                  "name": "module",
+                  "type": "module",
+                  "required": true,
+                  "doc": "LiveComponent module (e.g., `module={MyAppWeb.ModalComponent}`)."
+                },
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": true
+                },
+                {
+                  "name": ":for",
+                  "type": "any",
+                  "required": false
+                },
+                {
+                  "name": ":let",
+                  "type": "any",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "form",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/home/agung/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.form/1 – Renders a HEEx form with support for :let assigns and action attributes.",
+              "attributes": [
+                {
+                  "name": "for",
+                  "type": "any",
+                  "required": true
+                },
+                {
+                  "name": "as",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "action",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "method",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "phx-submit",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": "phx-change",
+                  "type": "string",
+                  "required": false
+                },
+                {
+                  "name": ":let",
+                  "type": "any",
+                  "required": false
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                },
+                {
+                  "name": "actions",
+                  "required": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "inputs_for",
+              "moduleName": "Phoenix.Component",
+              "filePath": "/home/agung/.vscode/extensions/onsever.phoenix-pulse-1.3.0/node_modules/@phoenix-pulse/language-server/resources/phoenix_component_builtins.ex",
+              "line": 1,
+              "doc": "Phoenix.Component.inputs_for/1 – Iterates nested inputs for associations or embeds within a parent form.",
+              "attributes": [
+                {
+                  "name": "field",
+                  "type": "any",
+                  "required": true,
+                  "doc": "Form field or association (e.g., `field={f[:addresses]}`)."
+                },
+                {
+                  "name": ":let",
+                  "type": "any",
+                  "required": true,
+                  "doc": "Binding for the nested form (e.g., `:let={address_form}`)."
+                },
+                {
+                  "name": "for",
+                  "type": "any",
+                  "required": false,
+                  "doc": "Explicit changeset/source for the nested inputs."
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/core_components.ex",
+          [
+            {
+              "name": "icon",
+              "moduleName": "RaffleyWeb.CoreComponents",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/core_components.ex",
+              "line": 510,
+              "attributes": [
+                {
+                  "name": "class",
+                  "type": "any",
+                  "required": false,
+                  "default": "\"size-4\"",
+                  "rawType": "any"
+                },
+                {
+                  "name": "name",
+                  "type": "string",
+                  "required": true,
+                  "rawType": "string"
+                }
+              ],
+              "slots": []
+            },
+            {
+              "name": "list",
+              "moduleName": "RaffleyWeb.CoreComponents",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/core_components.ex",
+              "line": 476,
+              "attributes": [],
+              "slots": [
+                {
+                  "name": "item",
+                  "required": true,
+                  "attributes": [
+                    {
+                      "default": null,
+                      "line": 473,
+                      "name": "title",
+                      "type": "string",
+                      "values": null,
+                      "doc": null,
+                      "required": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "table",
+              "moduleName": "RaffleyWeb.CoreComponents",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/core_components.ex",
+              "line": 424,
+              "attributes": [
+                {
+                  "name": "row_item",
+                  "type": "any",
+                  "required": false,
+                  "default": "{:&, [line: 415, column: 14], [{:/, [line: 415, column: 32], [{{:., [line: 415, column: 23], [{:__aliases__, [last: [line: 415, column: 15], line: 415, column: 15], [:Function]}, :identity]}, [no_parens: true, line: 415, column: 24], []}, 1]}]}",
+                  "doc": "the function for mapping each row before calling the :col and :action slots",
+                  "rawType": "any"
+                },
+                {
+                  "name": "row_click",
+                  "type": "any",
+                  "required": false,
+                  "default": "nil",
+                  "doc": "the function for handling phx-click on each row",
+                  "rawType": "any"
+                },
+                {
+                  "name": "row_id",
+                  "type": "any",
+                  "required": false,
+                  "default": "nil",
+                  "doc": "the function for generating the row id",
+                  "rawType": "any"
+                },
+                {
+                  "name": "rows",
+                  "type": "list",
+                  "required": true,
+                  "rawType": "list"
+                },
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": true,
+                  "rawType": "string"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "action",
+                  "required": false,
+                  "doc": "the slot for showing user actions in the last table column",
+                  "attributes": []
+                },
+                {
+                  "name": "col",
+                  "required": true,
+                  "attributes": [
+                    {
+                      "default": null,
+                      "line": 419,
+                      "name": "label",
+                      "type": "string",
+                      "values": null,
+                      "doc": null,
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "header",
+              "moduleName": "RaffleyWeb.CoreComponents",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/core_components.ex",
+              "line": 383,
+              "attributes": [],
+              "slots": [
+                {
+                  "name": "actions",
+                  "required": false,
+                  "attributes": []
+                },
+                {
+                  "name": "subtitle",
+                  "required": false,
+                  "attributes": []
+                },
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "input",
+              "moduleName": "RaffleyWeb.CoreComponents",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/core_components.ex",
+              "line": 252,
+              "attributes": [
+                {
+                  "name": "rest",
+                  "type": "global",
+                  "required": false,
+                  "rawType": "global"
+                },
+                {
+                  "name": "error_class",
+                  "type": "any",
+                  "required": false,
+                  "default": "nil",
+                  "doc": "the input error class to use over defaults",
+                  "rawType": "any"
+                },
+                {
+                  "name": "class",
+                  "type": "any",
+                  "required": false,
+                  "default": "nil",
+                  "doc": "the input class to use over defaults",
+                  "rawType": "any"
+                },
+                {
+                  "name": "multiple",
+                  "type": "boolean",
+                  "required": false,
+                  "default": "false",
+                  "doc": "the multiple flag for select inputs",
+                  "rawType": "boolean"
+                },
+                {
+                  "name": "options",
+                  "type": "list",
+                  "required": false,
+                  "doc": "the options to pass to Phoenix.HTML.Form.options_for_select/2",
+                  "rawType": "list"
+                },
+                {
+                  "name": "prompt",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "doc": "the prompt for select inputs",
+                  "rawType": "string"
+                },
+                {
+                  "name": "checked",
+                  "type": "boolean",
+                  "required": false,
+                  "doc": "the checked flag for checkbox inputs",
+                  "rawType": "boolean"
+                },
+                {
+                  "name": "errors",
+                  "type": "list",
+                  "required": false,
+                  "default": "[]",
+                  "rawType": "list"
+                },
+                {
+                  "name": "field",
+                  "type": "{:__aliases__, [last: [line: 237, column: 29], line: 237, column: 16], [:Phoenix, :HTML, :FormField]}",
+                  "required": false,
+                  "doc": "a form field struct retrieved from the form, for example: @form[:email]",
+                  "rawType": "{:__aliases__, [last: [line: 237, column: 29], line: 237, column: 16], [:Phoenix, :HTML, :FormField]}"
+                },
+                {
+                  "name": "type",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"text\"",
+                  "rawType": "string"
+                },
+                {
+                  "name": "value",
+                  "type": "any",
+                  "required": false,
+                  "rawType": "any"
+                },
+                {
+                  "name": "label",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                },
+                {
+                  "name": "name",
+                  "type": "any",
+                  "required": false,
+                  "rawType": "any"
+                },
+                {
+                  "name": "id",
+                  "type": "any",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "any"
+                }
+              ],
+              "slots": []
+            },
+            {
+              "name": "button",
+              "moduleName": "RaffleyWeb.CoreComponents",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/core_components.ex",
+              "line": 164,
+              "attributes": [
+                {
+                  "name": "variant",
+                  "type": "string",
+                  "required": false,
+                  "rawType": "string"
+                },
+                {
+                  "name": "class",
+                  "type": "any",
+                  "required": false,
+                  "rawType": "any"
+                },
+                {
+                  "name": "rest",
+                  "type": "global",
+                  "required": false,
+                  "rawType": "global"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "flash",
+              "moduleName": "RaffleyWeb.CoreComponents",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/core_components.ex",
+              "line": 90,
+              "attributes": [
+                {
+                  "name": "rest",
+                  "type": "global",
+                  "required": false,
+                  "doc": "the arbitrary HTML attributes to add to the flash container",
+                  "rawType": "global"
+                },
+                {
+                  "name": "kind",
+                  "type": "atom",
+                  "required": false,
+                  "values": [
+                    "info",
+                    "error",
+                    "success",
+                    "warning"
+                  ],
+                  "doc": "used for styling and flash lookup",
+                  "rawType": "atom"
+                },
+                {
+                  "name": "title",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                },
+                {
+                  "name": "flash",
+                  "type": "map",
+                  "required": false,
+                  "default": "{:%{}, [closing: [line: 43, column: 33], line: 43, column: 32], []}",
+                  "doc": "the map of flash messages to display",
+                  "rawType": "map"
+                },
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": false,
+                  "doc": "the optional id of flash container",
+                  "rawType": "string"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": false,
+                  "doc": "the optional inner block that renders the flash message",
+                  "attributes": []
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/custom_components.ex",
+          [
+            {
+              "name": "banner",
+              "moduleName": "RaffleyWeb.CustomComponents",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/custom_components.ex",
+              "line": 27,
+              "attributes": [],
+              "slots": [
+                {
+                  "name": "details",
+                  "required": false,
+                  "attributes": []
+                },
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "badge",
+              "moduleName": "RaffleyWeb.CustomComponents",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/custom_components.ex",
+              "line": 9,
+              "attributes": [
+                {
+                  "name": "class",
+                  "type": "string",
+                  "required": false,
+                  "default": "nil",
+                  "rawType": "string"
+                },
+                {
+                  "name": "status",
+                  "type": "atom",
+                  "required": false,
+                  "default": ":upcoming",
+                  "values": [
+                    "upcoming",
+                    "open",
+                    "closed"
+                  ],
+                  "rawType": "atom"
+                }
+              ],
+              "slots": []
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex",
+          [
+            {
+              "name": "render",
+              "moduleName": "RaffleyWeb.AdminRafflesLive.Index",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex",
+              "line": 16,
+              "attributes": [],
+              "slots": []
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/layouts.ex",
+          [
+            {
+              "name": "theme_toggle",
+              "moduleName": "RaffleyWeb.Layouts",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/layouts.ex",
+              "line": 120,
+              "attributes": [],
+              "slots": []
+            },
+            {
+              "name": "flash_group",
+              "moduleName": "RaffleyWeb.Layouts",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/layouts.ex",
+              "line": 80,
+              "attributes": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "required": false,
+                  "default": "\"flash-group\"",
+                  "doc": "the optional id of flash container",
+                  "rawType": "string"
+                },
+                {
+                  "name": "flash",
+                  "type": "map",
+                  "required": true,
+                  "doc": "the map of flash messages",
+                  "rawType": "map"
+                }
+              ],
+              "slots": []
+            },
+            {
+              "name": "app",
+              "moduleName": "RaffleyWeb.Layouts",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/layouts.ex",
+              "line": 36,
+              "attributes": [
+                {
+                  "name": "current_scope",
+                  "type": "map",
+                  "required": false,
+                  "default": "nil",
+                  "doc": "the current [scope](https://hexdocs.pm/phoenix/scopes.html)",
+                  "rawType": "map"
+                },
+                {
+                  "name": "flash",
+                  "type": "map",
+                  "required": true,
+                  "doc": "the map of flash messages",
+                  "rawType": "map"
+                }
+              ],
+              "slots": [
+                {
+                  "name": "inner_block",
+                  "required": true,
+                  "attributes": []
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/error_html.ex",
+          []
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html.ex",
+          []
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex",
+          [
+            {
+              "name": "show",
+              "moduleName": "RaffleyWeb.RuleHTML",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex",
+              "line": 6,
+              "attributes": [],
+              "slots": []
+            }
+          ]
+        ]
+      ],
+      "fileHashes": {
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/core_components.ex": "8dff26c067a408d9b37441ce931d227527a6df2e",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/custom_components.ex": "749b6c56fa466f0362ade3bdfdac69a8c1d75335",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex": "37cee156d68c8ce4b57cecd54e08f3faadcbf17e",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/components/layouts.ex": "bf377326d566834cbe562bcc082f8b12a585a61f",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/error_html.ex": "09e7ab086160977270c0ac493e8c759041406b86",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html.ex": "a071d49ffa6063fdee59d975a87a777b69b11683",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex": "39b2d6ec0aa2957efcd06f788506b899fdc5d731"
+      },
+      "workspaceRoot": "/home/agung/project agung web development/elixir phoenix/raffley_app"
+    },
+    "schemas": {
+      "schemas": [
+        [
+          "Raffley.Accounts.User",
+          {
+            "moduleName": "Raffley.Accounts.User",
+            "tableName": "users",
+            "fields": [
+              {
+                "name": "email",
+                "type": "string"
+              },
+              {
+                "name": "username",
+                "type": "string"
+              },
+              {
+                "name": "is_admin",
+                "type": "boolean"
+              },
+              {
+                "name": "password",
+                "type": "string"
+              },
+              {
+                "name": "hashed_password",
+                "type": "string"
+              },
+              {
+                "name": "confirmed_at",
+                "type": "utc_datetime"
+              },
+              {
+                "name": "authenticated_at",
+                "type": "utc_datetime"
+              },
+              {
+                "name": "tickets",
+                "type": "list",
+                "elixirType": "Raffley.Tickets.Ticket"
+              },
+              {
+                "name": "inserted_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "updated_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "id",
+                "type": "id"
+              }
+            ],
+            "associations": {},
+            "associationsDetailed": [
+              {
+                "fieldName": "tickets",
+                "targetModule": "Raffley.Tickets.Ticket",
+                "type": "has_many"
+              }
+            ],
+            "aliases": {},
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/accounts/user.ex",
+            "line": 5
+          }
+        ],
+        [
+          "Raffley.Accounts.UserToken",
+          {
+            "moduleName": "Raffley.Accounts.UserToken",
+            "tableName": "users_tokens",
+            "fields": [
+              {
+                "name": "token",
+                "type": "binary"
+              },
+              {
+                "name": "context",
+                "type": "string"
+              },
+              {
+                "name": "sent_to",
+                "type": "string"
+              },
+              {
+                "name": "authenticated_at",
+                "type": "utc_datetime"
+              },
+              {
+                "name": "user",
+                "type": "assoc",
+                "elixirType": "Raffley.Accounts.User"
+              },
+              {
+                "name": "inserted_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "updated_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "id",
+                "type": "id"
+              }
+            ],
+            "associations": {},
+            "associationsDetailed": [
+              {
+                "fieldName": "user",
+                "targetModule": "Raffley.Accounts.User",
+                "type": "belongs_to"
+              }
+            ],
+            "aliases": {},
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/accounts/user_token.ex",
+            "line": 15
+          }
+        ],
+        [
+          "Raffley.Charities.Charity",
+          {
+            "moduleName": "Raffley.Charities.Charity",
+            "tableName": "charities",
+            "fields": [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "slug",
+                "type": "string"
+              },
+              {
+                "name": "raffles",
+                "type": "list",
+                "elixirType": "Raffley.Raffles.Raffle"
+              },
+              {
+                "name": "inserted_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "updated_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "id",
+                "type": "id"
+              }
+            ],
+            "associations": {},
+            "associationsDetailed": [
+              {
+                "fieldName": "raffles",
+                "targetModule": "Raffley.Raffles.Raffle",
+                "type": "has_many"
+              }
+            ],
+            "aliases": {},
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/charities/charity.ex",
+            "line": 5
+          }
+        ],
+        [
+          "Raffley.Raffles.Raffle",
+          {
+            "moduleName": "Raffley.Raffles.Raffle",
+            "tableName": "raffles",
+            "fields": [
+              {
+                "name": "prize",
+                "type": "string"
+              },
+              {
+                "name": "description",
+                "type": "string"
+              },
+              {
+                "name": "ticket_price",
+                "type": "integer"
+              },
+              {
+                "name": "image_path",
+                "type": "string"
+              },
+              {
+                "name": "charity",
+                "type": "assoc",
+                "elixirType": "Raffley.Charities.Charity"
+              },
+              {
+                "name": "tickets",
+                "type": "list",
+                "elixirType": "Raffley.Tickets.Ticket"
+              },
+              {
+                "name": "winning_ticket",
+                "type": "assoc",
+                "elixirType": "Raffley.Tickets.Ticket"
+              },
+              {
+                "name": "inserted_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "updated_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "id",
+                "type": "id"
+              }
+            ],
+            "associations": {},
+            "associationsDetailed": [
+              {
+                "fieldName": "charity",
+                "targetModule": "Raffley.Charities.Charity",
+                "type": "belongs_to"
+              },
+              {
+                "fieldName": "tickets",
+                "targetModule": "Raffley.Tickets.Ticket",
+                "type": "has_many"
+              },
+              {
+                "fieldName": "winning_ticket",
+                "targetModule": "Raffley.Tickets.Ticket",
+                "type": "belongs_to"
+              }
+            ],
+            "aliases": {},
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/raffles/raffle.ex",
+            "line": 5
+          }
+        ],
+        [
+          "Raffley.Tickets.Ticket",
+          {
+            "moduleName": "Raffley.Tickets.Ticket",
+            "tableName": "tickets",
+            "fields": [
+              {
+                "name": "price",
+                "type": "integer"
+              },
+              {
+                "name": "comment",
+                "type": "string"
+              },
+              {
+                "name": "raffle",
+                "type": "assoc",
+                "elixirType": "Raffley.Raffles.Raffle"
+              },
+              {
+                "name": "user",
+                "type": "assoc",
+                "elixirType": "Raffley.Accounts.User"
+              },
+              {
+                "name": "inserted_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "updated_at",
+                "type": "naive_datetime"
+              },
+              {
+                "name": "id",
+                "type": "id"
+              }
+            ],
+            "associations": {},
+            "associationsDetailed": [
+              {
+                "fieldName": "raffle",
+                "targetModule": "Raffley.Raffles.Raffle",
+                "type": "belongs_to"
+              },
+              {
+                "fieldName": "user",
+                "targetModule": "Raffley.Accounts.User",
+                "type": "belongs_to"
+              }
+            ],
+            "aliases": {},
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/tickets/ticket.ex",
+            "line": 5
+          }
+        ]
+      ],
+      "schemasByFile": [
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/accounts/user.ex",
+          [
+            {
+              "moduleName": "Raffley.Accounts.User",
+              "tableName": "users",
+              "fields": [
+                {
+                  "name": "email",
+                  "type": "string"
+                },
+                {
+                  "name": "username",
+                  "type": "string"
+                },
+                {
+                  "name": "is_admin",
+                  "type": "boolean"
+                },
+                {
+                  "name": "password",
+                  "type": "string"
+                },
+                {
+                  "name": "hashed_password",
+                  "type": "string"
+                },
+                {
+                  "name": "confirmed_at",
+                  "type": "utc_datetime"
+                },
+                {
+                  "name": "authenticated_at",
+                  "type": "utc_datetime"
+                },
+                {
+                  "name": "tickets",
+                  "type": "list",
+                  "elixirType": "Raffley.Tickets.Ticket"
+                },
+                {
+                  "name": "inserted_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "updated_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "id",
+                  "type": "id"
+                }
+              ],
+              "associations": {},
+              "associationsDetailed": [
+                {
+                  "fieldName": "tickets",
+                  "targetModule": "Raffley.Tickets.Ticket",
+                  "type": "has_many"
+                }
+              ],
+              "aliases": {},
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/accounts/user.ex",
+              "line": 5
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/accounts/user_token.ex",
+          [
+            {
+              "moduleName": "Raffley.Accounts.UserToken",
+              "tableName": "users_tokens",
+              "fields": [
+                {
+                  "name": "token",
+                  "type": "binary"
+                },
+                {
+                  "name": "context",
+                  "type": "string"
+                },
+                {
+                  "name": "sent_to",
+                  "type": "string"
+                },
+                {
+                  "name": "authenticated_at",
+                  "type": "utc_datetime"
+                },
+                {
+                  "name": "user",
+                  "type": "assoc",
+                  "elixirType": "Raffley.Accounts.User"
+                },
+                {
+                  "name": "inserted_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "updated_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "id",
+                  "type": "id"
+                }
+              ],
+              "associations": {},
+              "associationsDetailed": [
+                {
+                  "fieldName": "user",
+                  "targetModule": "Raffley.Accounts.User",
+                  "type": "belongs_to"
+                }
+              ],
+              "aliases": {},
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/accounts/user_token.ex",
+              "line": 15
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/charities/charity.ex",
+          [
+            {
+              "moduleName": "Raffley.Charities.Charity",
+              "tableName": "charities",
+              "fields": [
+                {
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "name": "slug",
+                  "type": "string"
+                },
+                {
+                  "name": "raffles",
+                  "type": "list",
+                  "elixirType": "Raffley.Raffles.Raffle"
+                },
+                {
+                  "name": "inserted_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "updated_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "id",
+                  "type": "id"
+                }
+              ],
+              "associations": {},
+              "associationsDetailed": [
+                {
+                  "fieldName": "raffles",
+                  "targetModule": "Raffley.Raffles.Raffle",
+                  "type": "has_many"
+                }
+              ],
+              "aliases": {},
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/charities/charity.ex",
+              "line": 5
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/raffles/raffle.ex",
+          [
+            {
+              "moduleName": "Raffley.Raffles.Raffle",
+              "tableName": "raffles",
+              "fields": [
+                {
+                  "name": "prize",
+                  "type": "string"
+                },
+                {
+                  "name": "description",
+                  "type": "string"
+                },
+                {
+                  "name": "ticket_price",
+                  "type": "integer"
+                },
+                {
+                  "name": "image_path",
+                  "type": "string"
+                },
+                {
+                  "name": "charity",
+                  "type": "assoc",
+                  "elixirType": "Raffley.Charities.Charity"
+                },
+                {
+                  "name": "tickets",
+                  "type": "list",
+                  "elixirType": "Raffley.Tickets.Ticket"
+                },
+                {
+                  "name": "winning_ticket",
+                  "type": "assoc",
+                  "elixirType": "Raffley.Tickets.Ticket"
+                },
+                {
+                  "name": "inserted_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "updated_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "id",
+                  "type": "id"
+                }
+              ],
+              "associations": {},
+              "associationsDetailed": [
+                {
+                  "fieldName": "charity",
+                  "targetModule": "Raffley.Charities.Charity",
+                  "type": "belongs_to"
+                },
+                {
+                  "fieldName": "tickets",
+                  "targetModule": "Raffley.Tickets.Ticket",
+                  "type": "has_many"
+                },
+                {
+                  "fieldName": "winning_ticket",
+                  "targetModule": "Raffley.Tickets.Ticket",
+                  "type": "belongs_to"
+                }
+              ],
+              "aliases": {},
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/raffles/raffle.ex",
+              "line": 5
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/tickets/ticket.ex",
+          [
+            {
+              "moduleName": "Raffley.Tickets.Ticket",
+              "tableName": "tickets",
+              "fields": [
+                {
+                  "name": "price",
+                  "type": "integer"
+                },
+                {
+                  "name": "comment",
+                  "type": "string"
+                },
+                {
+                  "name": "raffle",
+                  "type": "assoc",
+                  "elixirType": "Raffley.Raffles.Raffle"
+                },
+                {
+                  "name": "user",
+                  "type": "assoc",
+                  "elixirType": "Raffley.Accounts.User"
+                },
+                {
+                  "name": "inserted_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "updated_at",
+                  "type": "naive_datetime"
+                },
+                {
+                  "name": "id",
+                  "type": "id"
+                }
+              ],
+              "associations": {},
+              "associationsDetailed": [
+                {
+                  "fieldName": "raffle",
+                  "targetModule": "Raffley.Raffles.Raffle",
+                  "type": "belongs_to"
+                },
+                {
+                  "fieldName": "user",
+                  "targetModule": "Raffley.Accounts.User",
+                  "type": "belongs_to"
+                }
+              ],
+              "aliases": {},
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/tickets/ticket.ex",
+              "line": 5
+            }
+          ]
+        ]
+      ],
+      "fileHashes": {
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/accounts/user.ex": "3082ed1220761c3e90cf876717af87196452b6bd",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/accounts/user_token.ex": "84ce648c7c6dc1f444fc0331443295be1fd066fd",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/charities/charity.ex": "89306fd9d5840d83abe368e34e8939e9ff58e9cd",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/raffles/raffle.ex": "f038b67cfa94cfcfd1da86c5e8442d2e68196b69",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley/tickets/ticket.ex": "581879033e416022b57160ac0a504ea240e27c79"
+      },
+      "workspaceRoot": "/home/agung/project agung web development/elixir phoenix/raffley_app"
+    },
+    "events": {
+      "events": [
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex",
+          [
+            {
+              "name": "save",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex",
+              "moduleName": "RaffleyWeb.CharityLive.Form",
+              "line": 63,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "validate",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex",
+              "moduleName": "RaffleyWeb.CharityLive.Form",
+              "line": 58,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex",
+          [
+            {
+              "name": "delete",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex",
+              "moduleName": "RaffleyWeb.CharityLive.Index",
+              "line": 54,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/show.ex",
+          []
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex",
+          [
+            {
+              "name": "tick",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex",
+              "moduleName": "RaffleyWeb.EstimatorLive",
+              "line": 61,
+              "params": ":atom",
+              "kind": "handle_info",
+              "nameKind": "atom"
+            },
+            {
+              "name": "set-price",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex",
+              "moduleName": "RaffleyWeb.EstimatorLive",
+              "line": 53,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "add",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex",
+              "moduleName": "RaffleyWeb.EstimatorLive",
+              "line": 47,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex",
+          [
+            {
+              "name": "submit",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex",
+              "moduleName": "RaffleyWeb.UserLive.Confirmation",
+              "line": 100,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex",
+          [
+            {
+              "name": "submit_magic",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex",
+              "moduleName": "RaffleyWeb.UserLive.Login",
+              "line": 139,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "submit_password",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex",
+              "moduleName": "RaffleyWeb.UserLive.Login",
+              "line": 135,
+              "params": "_params",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex",
+          [
+            {
+              "name": "validate",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex",
+              "moduleName": "RaffleyWeb.UserLive.Registration",
+              "line": 112,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "save",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex",
+              "moduleName": "RaffleyWeb.UserLive.Registration",
+              "line": 90,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/login_test.exs",
+          []
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/confirmation_test.exs",
+          []
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/settings_test.exs",
+          []
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex",
+          [
+            {
+              "name": "update_password",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex",
+              "moduleName": "RaffleyWeb.UserLive.Settings",
+              "line": 144,
+              "params": "params",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "validate_password",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex",
+              "moduleName": "RaffleyWeb.UserLive.Settings",
+              "line": 132,
+              "params": "params",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "update_email",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex",
+              "moduleName": "RaffleyWeb.UserLive.Settings",
+              "line": 111,
+              "params": "params",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "validate_email",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex",
+              "moduleName": "RaffleyWeb.UserLive.Settings",
+              "line": 99,
+              "params": "params",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/registration_test.exs",
+          []
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex",
+          [
+            {
+              "name": "draw-winner",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex",
+              "moduleName": "RaffleyWeb.AdminRafflesLive.Index",
+              "line": 93,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            },
+            {
+              "name": "delete",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex",
+              "moduleName": "RaffleyWeb.AdminRafflesLive.Index",
+              "line": 85,
+              "params": "%{}",
+              "kind": "handle_event",
+              "nameKind": "string"
+            }
+          ]
+        ]
+      ],
+      "fileHashes": {
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex": "d660859c128168e29229383e6c75cfc8a6aa818b",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex": "291d9856ff93ee56a86f7f434c199c8e8135097b",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/show.ex": "af5e13f70c757ffd7740824a84c1403eaef5e4e7",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex": "5be01d76bc9e80e1943e0451df32d4e0b39dbd22",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex": "3d5d523ab9c95c23c3c746b05db63683dec9205f",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex": "b5f0338befaa0324e10e84520471cb4628d4a92d",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex": "3172ba576559e775d1769e182970e2d51cce71b1",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/login_test.exs": "0072229f6b372b3c7595b7800fda1ab1470d8e52",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/confirmation_test.exs": "1e9ecaec573e2149af4d9e18a2a9afdafab287e8",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/settings_test.exs": "26c8ece23601f937e11571eea85847a3a8828604",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex": "f910fab8decb2244507d4a7fa7cc7c5c47a7f69d",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/registration_test.exs": "2a1669c4f7c51a2824edbd83c17c2214997288ff",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex": "37cee156d68c8ce4b57cecd54e08f3faadcbf17e"
+      },
+      "workspaceRoot": "/home/agung/project agung web development/elixir phoenix/raffley_app"
+    },
+    "routes": {
+      "routes": [
+        {
+          "path": "/users/log-out",
+          "verb": "DELETE",
+          "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/router.ex",
+          "line": 102,
+          "helperBase": "users_log_out",
+          "params": [],
+          "isResource": false,
+          "controller": "UserSessionController",
+          "action": "delete",
+          "scopePath": "/"
+        },
+        {
+          "path": "/users/log-in",
+          "verb": "POST",
+          "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/router.ex",
+          "line": 101,
+          "helperBase": "users_log_in",
+          "params": [],
+          "isResource": false,
+          "controller": "UserSessionController",
+          "action": "create",
+          "scopePath": "/"
+        },
+        {
+          "path": "/users/update-password",
+          "verb": "POST",
+          "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/router.ex",
+          "line": 88,
+          "helperBase": "users_update_password",
+          "params": [],
+          "isResource": false,
+          "controller": "UserSessionController",
+          "action": "update_password",
+          "scopePath": "/"
+        },
+        {
+          "path": "/raffles/:id",
+          "verb": "LIVE",
+          "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/router.ex",
+          "line": 33,
+          "helperBase": "raffles",
+          "params": [
+            "id"
+          ],
+          "isResource": false,
+          "liveModule": "RafflesLive.Show",
+          "scopePath": "/"
+        },
+        {
+          "path": "/raffles",
+          "verb": "LIVE",
+          "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/router.ex",
+          "line": 32,
+          "helperBase": "raffles",
+          "params": [],
+          "isResource": false,
+          "liveModule": "RafflesLive.Index",
+          "scopePath": "/"
+        },
+        {
+          "path": "/estimator",
+          "verb": "LIVE",
+          "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/router.ex",
+          "line": 31,
+          "helperBase": "estimator",
+          "params": [],
+          "isResource": false,
+          "liveModule": "EstimatorLive",
+          "scopePath": "/"
+        },
+        {
+          "path": "/",
+          "verb": "LIVE",
+          "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/router.ex",
+          "line": 30,
+          "helperBase": "root",
+          "params": [],
+          "isResource": false,
+          "liveModule": "RafflesLive.Index",
+          "scopePath": "/"
+        },
+        {
+          "path": "/rules/:id",
+          "verb": "GET",
+          "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/router.ex",
+          "line": 26,
+          "helperBase": "rules",
+          "params": [
+            "id"
+          ],
+          "isResource": false,
+          "controller": "RuleController",
+          "action": "show",
+          "scopePath": "/"
+        },
+        {
+          "path": "/rules",
+          "verb": "GET",
+          "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/router.ex",
+          "line": 25,
+          "helperBase": "rules",
+          "params": [],
+          "isResource": false,
+          "controller": "RuleController",
+          "action": "index",
+          "scopePath": "/"
+        }
+      ],
+      "fileHashes": {
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/router.ex": "41aa447fec76c3502c1d8df4b4cceabc825f777e"
+      },
+      "workspaceRoot": "/home/agung/project agung web development/elixir phoenix/raffley_app"
+    },
+    "controllers": {
+      "rendersByFile": [
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/user_session_controller.ex",
+          []
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_controller.ex",
+          [
+            {
+              "controllerModule": "RaffleyWeb.PageController",
+              "controllerFile": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_controller.ex",
+              "action": "home",
+              "templateName": "home",
+              "assigns": [],
+              "assignsWithTypes": [],
+              "line": 5,
+              "templatePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html/home.html.heex"
+            }
+          ]
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_controller.ex",
+          [
+            {
+              "controllerModule": "RaffleyWeb.RuleController",
+              "controllerFile": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_controller.ex",
+              "action": "index",
+              "templateName": "index",
+              "assigns": [
+                "emojis",
+                "rules"
+              ],
+              "assignsWithTypes": [
+                {
+                  "name": "emojis",
+                  "variableName": "emojis"
+                },
+                {
+                  "name": "rules",
+                  "variableName": "rules"
+                }
+              ],
+              "line": 11,
+              "templatePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html/index.html.heex"
+            },
+            {
+              "controllerModule": "RaffleyWeb.RuleController",
+              "controllerFile": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_controller.ex",
+              "action": "show",
+              "templateName": "show",
+              "assigns": [
+                "rule"
+              ],
+              "assignsWithTypes": [
+                {
+                  "name": "rule",
+                  "variableName": "rule"
+                }
+              ],
+              "line": 17,
+              "templatePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex#show"
+            }
+          ]
+        ]
+      ],
+      "templateSummaries": [
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html/home.html.heex",
+          {
+            "templatePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html/home.html.heex",
+            "assignSources": {},
+            "controllers": [
+              {
+                "controllerModule": "RaffleyWeb.PageController",
+                "controllerFile": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_controller.ex",
+                "action": "home",
+                "templateName": "home",
+                "assigns": [],
+                "assignsWithTypes": [],
+                "line": 5,
+                "templatePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html/home.html.heex"
+              }
+            ]
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html/index.html.heex",
+          {
+            "templatePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html/index.html.heex",
+            "assignSources": {},
+            "controllers": [
+              {
+                "controllerModule": "RaffleyWeb.RuleController",
+                "controllerFile": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_controller.ex",
+                "action": "index",
+                "templateName": "index",
+                "assigns": [
+                  "emojis",
+                  "rules"
+                ],
+                "assignsWithTypes": [
+                  {
+                    "name": "emojis",
+                    "variableName": "emojis"
+                  },
+                  {
+                    "name": "rules",
+                    "variableName": "rules"
+                  }
+                ],
+                "line": 11,
+                "templatePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html/index.html.heex"
+              }
+            ]
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex#show",
+          {
+            "templatePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex#show",
+            "assignSources": {},
+            "controllers": [
+              {
+                "controllerModule": "RaffleyWeb.RuleController",
+                "controllerFile": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_controller.ex",
+                "action": "show",
+                "templateName": "show",
+                "assigns": [
+                  "rule"
+                ],
+                "assignsWithTypes": [
+                  {
+                    "name": "rule",
+                    "variableName": "rule"
+                  }
+                ],
+                "line": 17,
+                "templatePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex#show"
+              }
+            ]
+          }
+        ]
+      ],
+      "fileHashes": {
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/user_session_controller.ex": "feefba923b3fd75d15abff2264ecd46b85d506b3",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_controller.ex": "9315b169130dd17864e4ce581c6734948fa7b81d",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_controller.ex": "732eaf2abc8d4a15de885a6ceb1225f4b2840368"
+      },
+      "workspaceRoot": "/home/agung/project agung web development/elixir phoenix/raffley_app"
+    },
+    "templates": {
+      "templatesByModule": [
+        [
+          "RaffleyWeb.AdminRafflesLive.Form",
+          [
+            {
+              "moduleName": "RaffleyWeb.AdminRafflesLive.Form",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/form.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.PageHTML",
+          [
+            {
+              "moduleName": "RaffleyWeb.PageHTML",
+              "name": "home",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html/home.html.heex"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.RuleHTML",
+          [
+            {
+              "moduleName": "RaffleyWeb.RuleHTML",
+              "name": "index",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html/index.html.heex"
+            },
+            {
+              "moduleName": "RaffleyWeb.RuleHTML",
+              "name": "show",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex#show"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.CharityLive.Form",
+          [
+            {
+              "moduleName": "RaffleyWeb.CharityLive.Form",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.CharityLive.Index",
+          [
+            {
+              "moduleName": "RaffleyWeb.CharityLive.Index",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.EstimatorLive",
+          [
+            {
+              "moduleName": "RaffleyWeb.EstimatorLive",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.CharityLive.Show",
+          [
+            {
+              "moduleName": "RaffleyWeb.CharityLive.Show",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/show.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.UserLive.Login",
+          [
+            {
+              "moduleName": "RaffleyWeb.UserLive.Login",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.RafflesLive.Show",
+          [
+            {
+              "moduleName": "RaffleyWeb.RafflesLive.Show",
+              "name": "ticket",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#ticket"
+            },
+            {
+              "moduleName": "RaffleyWeb.RafflesLive.Show",
+              "name": "featured_raffles",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#featured_raffles"
+            },
+            {
+              "moduleName": "RaffleyWeb.RafflesLive.Show",
+              "name": "raffle_watchers",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#raffle_watchers"
+            },
+            {
+              "moduleName": "RaffleyWeb.RafflesLive.Show",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.UserLive.Confirmation",
+          [
+            {
+              "moduleName": "RaffleyWeb.UserLive.Confirmation",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.RafflesLive.Index",
+          [
+            {
+              "moduleName": "RaffleyWeb.RafflesLive.Index",
+              "name": "raffle_card",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex#raffle_card"
+            },
+            {
+              "moduleName": "RaffleyWeb.RafflesLive.Index",
+              "name": "filter_form",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex#filter_form"
+            },
+            {
+              "moduleName": "RaffleyWeb.RafflesLive.Index",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.UserLive.Settings",
+          [
+            {
+              "moduleName": "RaffleyWeb.UserLive.Settings",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.UserLive.Registration",
+          [
+            {
+              "moduleName": "RaffleyWeb.UserLive.Registration",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex#render"
+            }
+          ]
+        ],
+        [
+          "RaffleyWeb.AdminRafflesLive.Index",
+          [
+            {
+              "moduleName": "RaffleyWeb.AdminRafflesLive.Index",
+              "name": "render",
+              "format": "html",
+              "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex#render"
+            }
+          ]
+        ]
+      ],
+      "templatesByPath": [
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/form.ex#render",
+          {
+            "moduleName": "RaffleyWeb.AdminRafflesLive.Form",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/form.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html/home.html.heex",
+          {
+            "moduleName": "RaffleyWeb.PageHTML",
+            "name": "home",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html/home.html.heex"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html/index.html.heex",
+          {
+            "moduleName": "RaffleyWeb.RuleHTML",
+            "name": "index",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html/index.html.heex"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex#show",
+          {
+            "moduleName": "RaffleyWeb.RuleHTML",
+            "name": "show",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex#show"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex#render",
+          {
+            "moduleName": "RaffleyWeb.CharityLive.Form",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex#render",
+          {
+            "moduleName": "RaffleyWeb.CharityLive.Index",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex#render",
+          {
+            "moduleName": "RaffleyWeb.EstimatorLive",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/show.ex#render",
+          {
+            "moduleName": "RaffleyWeb.CharityLive.Show",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/show.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex#render",
+          {
+            "moduleName": "RaffleyWeb.UserLive.Login",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#ticket",
+          {
+            "moduleName": "RaffleyWeb.RafflesLive.Show",
+            "name": "ticket",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#ticket"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#featured_raffles",
+          {
+            "moduleName": "RaffleyWeb.RafflesLive.Show",
+            "name": "featured_raffles",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#featured_raffles"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#raffle_watchers",
+          {
+            "moduleName": "RaffleyWeb.RafflesLive.Show",
+            "name": "raffle_watchers",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#raffle_watchers"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#render",
+          {
+            "moduleName": "RaffleyWeb.RafflesLive.Show",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex#render",
+          {
+            "moduleName": "RaffleyWeb.UserLive.Confirmation",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex#raffle_card",
+          {
+            "moduleName": "RaffleyWeb.RafflesLive.Index",
+            "name": "raffle_card",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex#raffle_card"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex#filter_form",
+          {
+            "moduleName": "RaffleyWeb.RafflesLive.Index",
+            "name": "filter_form",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex#filter_form"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex#render",
+          {
+            "moduleName": "RaffleyWeb.RafflesLive.Index",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex#render",
+          {
+            "moduleName": "RaffleyWeb.UserLive.Settings",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex#render",
+          {
+            "moduleName": "RaffleyWeb.UserLive.Registration",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex#render"
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex#render",
+          {
+            "moduleName": "RaffleyWeb.AdminRafflesLive.Index",
+            "name": "render",
+            "format": "html",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex#render"
+          }
+        ]
+      ],
+      "moduleByFile": [
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/form.ex",
+          "RaffleyWeb.AdminRafflesLive.Form"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html.ex",
+          "RaffleyWeb.PageHTML"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex",
+          "RaffleyWeb.RuleHTML"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex",
+          "RaffleyWeb.CharityLive.Form"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex",
+          "RaffleyWeb.CharityLive.Index"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex",
+          "RaffleyWeb.EstimatorLive"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/show.ex",
+          "RaffleyWeb.CharityLive.Show"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex",
+          "RaffleyWeb.UserLive.Login"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex",
+          "RaffleyWeb.RafflesLive.Show"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex",
+          "RaffleyWeb.UserLive.Confirmation"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex",
+          "RaffleyWeb.RafflesLive.Index"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex",
+          "RaffleyWeb.UserLive.Settings"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex",
+          "RaffleyWeb.UserLive.Registration"
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex",
+          "RaffleyWeb.AdminRafflesLive.Index"
+        ]
+      ],
+      "fileHashes": {
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/form.ex": "8277625d3b6edbd81fb78e1d500d5c3f3eda589c",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/page_html.ex": "a071d49ffa6063fdee59d975a87a777b69b11683",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/controllers/rule_html.ex": "39b2d6ec0aa2957efcd06f788506b899fdc5d731",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex": "d660859c128168e29229383e6c75cfc8a6aa818b",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex": "291d9856ff93ee56a86f7f434c199c8e8135097b",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex": "5be01d76bc9e80e1943e0451df32d4e0b39dbd22",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/show.ex": "af5e13f70c757ffd7740824a84c1403eaef5e4e7",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex": "b5f0338befaa0324e10e84520471cb4628d4a92d",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/show.ex": "10107ec2e56a1f0973bca32826d75ab10b56ecca",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex": "3d5d523ab9c95c23c3c746b05db63683dec9205f",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/raffle/index.ex": "09edb1ce5faace184ecab30e6dfc5d607962f3d8",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex": "f910fab8decb2244507d4a7fa7cc7c5c47a7f69d",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex": "3172ba576559e775d1769e182970e2d51cce71b1",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/admin_raffles/index.ex": "37cee156d68c8ce4b57cecd54e08f3faadcbf17e"
+      },
+      "workspaceRoot": "/home/agung/project agung web development/elixir phoenix/raffley_app"
+    },
+    "liveview": {
+      "liveViews": [
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex",
+          {
+            "module": "RaffleyWeb.CharityLive.Index",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex",
+            "functions": [
+              {
+                "line": 54,
+                "name": "delete",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.CharityLive.Index",
+                "event_name": "delete"
+              },
+              {
+                "line": 46,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "RaffleyWeb.CharityLive.Index"
+              },
+              {
+                "line": 7,
+                "name": "render",
+                "type": "render",
+                "module_name": "RaffleyWeb.CharityLive.Index"
+              }
+            ]
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex",
+          {
+            "module": "RaffleyWeb.UserLive.Confirmation",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex",
+            "functions": [
+              {
+                "line": 100,
+                "name": "submit",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.UserLive.Confirmation",
+                "event_name": "submit"
+              },
+              {
+                "line": 85,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "RaffleyWeb.UserLive.Confirmation"
+              },
+              {
+                "line": 7,
+                "name": "render",
+                "type": "render",
+                "module_name": "RaffleyWeb.UserLive.Confirmation"
+              }
+            ]
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/show.ex",
+          {
+            "module": "RaffleyWeb.CharityLive.Show",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/show.ex",
+            "functions": [
+              {
+                "line": 45,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "RaffleyWeb.CharityLive.Show"
+              },
+              {
+                "line": 7,
+                "name": "render",
+                "type": "render",
+                "module_name": "RaffleyWeb.CharityLive.Show"
+              }
+            ]
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex",
+          {
+            "module": "RaffleyWeb.CharityLive.Form",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex",
+            "functions": [
+              {
+                "line": 63,
+                "name": "save",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.CharityLive.Form",
+                "event_name": "save"
+              },
+              {
+                "line": 58,
+                "name": "validate",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.CharityLive.Form",
+                "event_name": "validate"
+              },
+              {
+                "line": 29,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "RaffleyWeb.CharityLive.Form"
+              },
+              {
+                "line": 8,
+                "name": "render",
+                "type": "render",
+                "module_name": "RaffleyWeb.CharityLive.Form"
+              }
+            ]
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex",
+          {
+            "module": "RaffleyWeb.UserLive.Settings",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex",
+            "functions": [
+              {
+                "line": 144,
+                "name": "update_password",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.UserLive.Settings",
+                "event_name": "update_password"
+              },
+              {
+                "line": 132,
+                "name": "validate_password",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.UserLive.Settings",
+                "event_name": "validate_password"
+              },
+              {
+                "line": 111,
+                "name": "update_email",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.UserLive.Settings",
+                "event_name": "update_email"
+              },
+              {
+                "line": 99,
+                "name": "validate_email",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.UserLive.Settings",
+                "event_name": "validate_email"
+              },
+              {
+                "line": 83,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "RaffleyWeb.UserLive.Settings"
+              },
+              {
+                "line": 70,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "RaffleyWeb.UserLive.Settings"
+              },
+              {
+                "line": 9,
+                "name": "render",
+                "type": "render",
+                "module_name": "RaffleyWeb.UserLive.Settings"
+              }
+            ]
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex",
+          {
+            "module": "RaffleyWeb.UserLive.Registration",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex",
+            "functions": [
+              {
+                "line": 112,
+                "name": "validate",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.UserLive.Registration",
+                "event_name": "validate"
+              },
+              {
+                "line": 90,
+                "name": "save",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.UserLive.Registration",
+                "event_name": "save"
+              },
+              {
+                "line": 83,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "RaffleyWeb.UserLive.Registration"
+              },
+              {
+                "line": 8,
+                "name": "render",
+                "type": "render",
+                "module_name": "RaffleyWeb.UserLive.Registration"
+              }
+            ]
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex",
+          {
+            "module": "RaffleyWeb.UserLive.Login",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex",
+            "functions": [
+              {
+                "line": 139,
+                "name": "submit_magic",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.UserLive.Login",
+                "event_name": "submit_magic"
+              },
+              {
+                "line": 135,
+                "name": "submit_password",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.UserLive.Login",
+                "event_name": "submit_password"
+              },
+              {
+                "line": 124,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "RaffleyWeb.UserLive.Login"
+              },
+              {
+                "line": 7,
+                "name": "render",
+                "type": "render",
+                "module_name": "RaffleyWeb.UserLive.Login"
+              }
+            ]
+          }
+        ],
+        [
+          "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex",
+          {
+            "module": "RaffleyWeb.EstimatorLive",
+            "filePath": "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex",
+            "functions": [
+              {
+                "line": 61,
+                "name": "tick",
+                "type": "handle_info",
+                "module_name": "RaffleyWeb.EstimatorLive",
+                "event_name": "tick"
+              },
+              {
+                "line": 53,
+                "name": "set-price",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.EstimatorLive",
+                "event_name": "set-price"
+              },
+              {
+                "line": 47,
+                "name": "add",
+                "type": "handle_event",
+                "module_name": "RaffleyWeb.EstimatorLive",
+                "event_name": "add"
+              },
+              {
+                "line": 14,
+                "name": "render",
+                "type": "render",
+                "module_name": "RaffleyWeb.EstimatorLive"
+              },
+              {
+                "line": 4,
+                "name": "mount",
+                "type": "mount",
+                "module_name": "RaffleyWeb.EstimatorLive"
+              }
+            ]
+          }
+        ]
+      ],
+      "fileHashes": {
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/index.ex": "291d9856ff93ee56a86f7f434c199c8e8135097b",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/confirmation.ex": "3d5d523ab9c95c23c3c746b05db63683dec9205f",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/login_test.exs": "0072229f6b372b3c7595b7800fda1ab1470d8e52",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/show.ex": "af5e13f70c757ffd7740824a84c1403eaef5e4e7",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/charity_live/form.ex": "d660859c128168e29229383e6c75cfc8a6aa818b",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/settings.ex": "f910fab8decb2244507d4a7fa7cc7c5c47a7f69d",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/registration.ex": "3172ba576559e775d1769e182970e2d51cce71b1",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/user_live/login.ex": "b5f0338befaa0324e10e84520471cb4628d4a92d",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/confirmation_test.exs": "1e9ecaec573e2149af4d9e18a2a9afdafab287e8",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/lib/raffley_web/live/estimator/estimator_live.ex": "5be01d76bc9e80e1943e0451df32d4e0b39dbd22",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/registration_test.exs": "2a1669c4f7c51a2824edbd83c17c2214997288ff",
+        "/home/agung/project agung web development/elixir phoenix/raffley_app/raffley/test/raffley_web/live/user_live/settings_test.exs": "26c8ece23601f937e11571eea85847a3a8828604"
+      },
+      "workspaceRoot": "/home/agung/project agung web development/elixir phoenix/raffley_app"
+    }
+  },
+  "fileHashes": {}
+}
